@@ -27,20 +27,55 @@
   margin: 100px 0 0 250px;
 }
 
-/*.click {
+.click {
   position: absolute;
   width: 100px;
   height: 100px;
-  border: 1px solid black;
+  border: 3px solid red;
 }
 
-/*.click .top .left {
+.click.top.left {
   margin: 100px 0 0 50px;
 }
 
-.click .top .center {
+.click.top.center {
   margin: 100px 0 0 150px;
 }
+
+.click.top.right {
+  margin: 100px 0 0 250px;
+}
+
+.click.middle.left {
+  margin: 200px 0 0 50px;
+}
+
+.click.middle.center {
+  margin: 200px 0 0 150px;
+}
+
+.click.middle.right {
+  margin: 200px 0 0 250px;
+}
+
+.click.bottom.left {
+  margin: 300px 0 0 50px;
+}
+
+.click.bottom.center {
+  margin: 300px 0 0 150px;
+}
+
+.click.bottom.right {
+  margin: 300px 0 0 250px;
+}
+
+
+
+
+
+
+
 
 
 
