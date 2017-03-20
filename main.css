@@ -1,0 +1,46 @@
+.border {
+  border: 4px solid black;
+  position: absolute;
+}
+
+.horizontal {
+  width: 300px;
+}
+
+.margin-top {
+  margin: 200px 0 0 50px;
+}
+
+.margin-bottom {
+  margin: 300px 0 0 50px;
+}
+
+.vertical {
+  height: 300px;
+}
+
+.margin-left {
+  margin: 100px 0 0 150px;
+}
+
+.margin-right {
+  margin: 100px 0 0 250px;
+}
+
+/*.click {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+/*.click .top .left {
+  margin: 100px 0 0 50px;
+}
+
+.click .top .center {
+  margin: 100px 0 0 150px;
+}
+
+
+
