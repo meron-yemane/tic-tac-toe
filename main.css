@@ -31,46 +31,53 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  border: 3px solid red;
+  border: 3px;
 }
 
-.click.top.left {
+.click.row-0.column-0 {
   margin: 100px 0 0 50px;
 }
 
-.click.top.center {
+.click.row-0.column-1 {
   margin: 100px 0 0 150px;
 }
 
-.click.top.right {
+.click.row-0.column-2 {
   margin: 100px 0 0 250px;
 }
 
-.click.middle.left {
+.click.row-1.column-0 {
   margin: 200px 0 0 50px;
 }
 
-.click.middle.center {
+.click.row-1.column-1 {
   margin: 200px 0 0 150px;
 }
 
-.click.middle.right {
+.click.row-1.column-2 {
   margin: 200px 0 0 250px;
 }
 
-.click.bottom.left {
+.click.row-2.column-0 {
   margin: 300px 0 0 50px;
 }
 
-.click.bottom.center {
+.click.row-2.column-1 {
   margin: 300px 0 0 150px;
 }
 
-.click.bottom.right {
+.click.row-2.column-2 {
   margin: 300px 0 0 250px;
 }
 
+.mark {
+  font-size: 60px;
+  margin: 13px 0 0 28px;
+}
 
+#above-msg {
+  margin: 50px 0 0 50px;
+}
 
 
 
