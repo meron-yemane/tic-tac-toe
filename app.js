@@ -1,11 +1,12 @@
 var player = 1;
+var numOfMoves = 0 
 
 state = {
   score: [[[],[],[]],[[],[],[]],[[],[],[]]]
 }
 
 $(".click").one("click", function(event) {
-  console.log(state["score"])
+  numOfMoves += 1
   if (JSON.stringify(state["score"]) === JSON.stringify([[[],[],[]],[[],[],[]],[[],[],[]]])) {
     $("#above-msg").html(" ")
   }
@@ -55,6 +56,11 @@ var checkWinner = function() {
     endGame();
   } else if (state["score"][0][2] === state["score"][1][1] && state["score"][0][2] === state["score"][2][0]) {
     endGame();
+  } else if (numOfMoves === 9) {
+    var html = '<h1>It' + "'" + 's a tie! Click below to play again!</h1>';
+    html += '<form class="restart">';
+    html +=  '<button type="submit" name="restart-button">Start over</button></form>' 
+    $("#above-msg").html(html);
   };
 };
 
@@ -64,10 +70,9 @@ var endGame = function() {
   } else {
     player = 1
   };
-  var html = '<h1>Congratulations Player ' + player.toString() + '! You got three in a row!'
+  var html = '<h1>Congratulations Player ' + player.toString() + '! You got three in a row!</h1>'
   html += '<form class="restart">';
-  html +=  '<button type="submit" name="restart-button">Start over</button></form>'
-  console.log(html) 
+  html +=  '<button type="submit" name="restart-button">Start over</button></form>' 
   $("#above-msg").html(html);
   $(".click").off("click");
 }
