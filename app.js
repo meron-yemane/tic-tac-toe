@@ -28,13 +28,11 @@ $(".click").one("click", function(event) {
 });
 
 var updateScoreWithX = function(row, column) {
-  console.log(state["score"])
   state["score"][row][column] = "X";
   checkWinner();
 };
 
 var updateScoreWithO = function(row, column) {
-  console.log(state["score"])
   state["score"][row][column] = "O";
   checkWinner();
 };
@@ -88,22 +86,3 @@ var renderStartingMsg = function() {
 }
 
 renderStartingMsg();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
